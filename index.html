@@ -1,228 +1,128 @@
-
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D'SEGURO LTDA | Protegemos lo que más te importa en Colombia</title>
-    
-    <!-- Metatags SEO y Confianza -->
-    <meta name="description" content="Especialistas en seguros de salud, vida, vehículos, hogar, pymes y cumplimiento en Colombia. Asesoría experta y personalizada con D'SEGURO LTDA.">
-    <meta name="theme-color" content="#0F2444">
-
-    <!-- Tailwind CSS CDN -->
+    <title>Dseguro Ltda | Soluciones en Seguros y Pólizas en Colombia</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        brand: {
-                            dark: '#081426',
-                            blue: '#0F2444',
-                            primary: '#1A3B6B',
-                            light: '#2E5B9A',
+                        corporate: {
+                            blue: '#0B2545',
+                            navy: '#134074',
                             gold: '#D4AF37',
-                            goldHover: '#B89428',
-                            accent: '#F39C12'
+                            light: '#EEF4F8',
+                            accent: '#8DA9C4'
                         }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'system-ui', 'sans-serif'],
                     }
                 }
             }
         }
     </script>
-    
-    <!-- Google Fonts & FontAwesome Icons -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <style>
-        .gold-gradient {
-            background: linear-gradient(135deg, #ECC94B 0%, #D4AF37 50%, #B7791F 100%);
-        }
-        .hero-bg {
-            background: radial-gradient(circle at 10% 20%, rgba(26, 59, 107, 0.95) 0%, rgba(8, 20, 38, 0.98) 90%);
-        }
-        .pulse-gold {
-            box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7);
-            animation: pulse-gold 2s infinite;
-        }
-        @keyframes pulse-gold {
-            0% { transform: scale(0.98); box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.6); }
-            70% { transform: scale(1); box-shadow: 0 0 0 15px rgba(212, 175, 55, 0); }
-            100% { transform: scale(0.98); box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
-        }
-    </style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-gold selection:text-brand-dark">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-    <!-- BARRA SUPERIOR DE CONFIANZA Y CONTACTO RÁPIDO -->
-    <div class="bg-brand-dark text-slate-300 text-xs sm:text-sm py-2 px-4 border-b border-white/10">
-        <div class="max-w-7xl mx-auto flex justify-between items-center flex-wrap gap-2">
+    <!-- Top Bar / Aviso de Confianza -->
+    <div class="bg-corporate-blue text-white text-xs sm:text-sm py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
             <div class="flex items-center gap-4">
-                <span class="flex items-center gap-1.5 text-emerald-400 font-medium">
-                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-                    Asesores disponibles en línea
-                </span>
-                <span class="hidden md:inline text-slate-500">|</span>
-                <span class="hidden md:inline flex items-center gap-1 text-slate-300">
-                    <i class="fa-solid fa-shield-check text-brand-gold"></i> Intermediarios Autorizados
-                </span>
+                <span><i class="fas fa-shield-alt text-corporate-gold mr-1"></i> Asesoría Experta y Respaldo Autorizado en Colombia</span>
             </div>
-            <div class="flex items-center gap-4 ml-auto">
-                <a href="https://wa.me/573216697721" target="_blank" class="hover:text-brand-gold transition flex items-center gap-1.5 font-semibold text-white">
-                    <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i> +57 (321) 669-7721
-                </a>
-                <a href="https://www.instagram.com/dseguro_ltda/" target="_blank" class="hover:text-brand-gold transition flex items-center gap-1">
-                    <i class="fa-brands fa-instagram text-pink-400"></i> @dseguro_ltda
-                </a>
+            <div class="flex items-center gap-4">
+                <a href="tel:+573216697721" class="hover:text-corporate-gold transition"><i class="fas fa-phone-alt mr-1"></i> +57 321 669 7721</a>
+                <a href="https://www.instagram.com/dseguro_ltda/" target="_blank" class="hover:text-corporate-gold transition"><i class="fab fa-instagram mr-1"></i> @dseguro_ltda</a>
             </div>
         </div>
     </div>
 
-    <!-- NAVEGACIÓN -->
-    <header class="sticky top-0 z-50 bg-brand-blue/95 backdrop-blur-md border-b border-brand-light/30 text-white shadow-xl">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex justify-between items-center">
-            <!-- Logo D'SEGURO LTDA -->
-            <a href="#" class="flex items-center gap-3 group">
-                <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-brand-primary via-brand-light to-brand-gold p-0.5 shadow-lg">
-                    <div class="w-full h-full bg-brand-dark rounded-[10px] flex items-center justify-center font-black text-xl text-brand-gold">
-                        D
-                    </div>
-                </div>
-                <div>
-                    <span class="text-xl sm:text-2xl font-black tracking-tight block leading-tight group-hover:text-brand-gold transition">
-                        D'SEGURO <span class="text-brand-gold text-sm font-semibold tracking-normal">LTDA</span>
-                    </span>
-                    <span class="text-[10px] uppercase tracking-widest text-slate-400 font-semibold block">Agencia de Seguros</span>
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <img src="LOGO DSEGURO.jpg" alt="Dseguro Ltda Logo" class="h-12 w-auto object-contain rounded-lg shadow-sm border border-slate-200">
+                <div class="flex flex-col">
+                    <span class="text-xl font-black tracking-tight text-corporate-blue leading-none">DSEGURO<span class="text-corporate-gold">.</span></span>
+                    <span class="text-[10px] uppercase tracking-widest text-slate-500 font-semibold mt-1">Ltda · Asesores de Seguros</span>
                 </div>
             </a>
-
-            <!-- Menú de enlaces -->
-            <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-slate-200">
-                <a href="#soluciones" class="hover:text-brand-gold transition">Portafolio</a>
-                <a href="#aliados" class="hover:text-brand-gold transition">Aseguradoras Aliadas</a>
-                <a href="#lineas" class="hover:text-brand-gold transition">Líneas de Atención</a>
-                <a href="#testimonios" class="hover:text-brand-gold transition">¿Por qué D'SEGURO?</a>
+            
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-700">
+                <a href="#inicio" class="hover:text-corporate-navy transition">Inicio</a>
+                <a href="#aliados" class="hover:text-corporate-navy transition">Aseguradoras</a>
+                <a href="#servicios" class="hover:text-corporate-navy transition">Pólizas</a>
+                <a href="#cotizador" class="hover:text-corporate-navy transition">Cotizador Rápido</a>
+                <a href="#testimonios" class="hover:text-corporate-navy transition">Opiniones</a>
             </nav>
 
-            <!-- CTA Header -->
-            <a href="https://wa.me/573216697721?text=Hola%20D'SEGURO%20LTDA,%20deseo%20recibir%20asesoría%20personalizada." 
-               target="_blank"
-               class="bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-bold text-xs sm:text-sm py-2.5 px-4 sm:px-5 rounded-full shadow-lg hover:shadow-emerald-500/30 transition duration-300 flex items-center gap-2">
-                <i class="fa-brands fa-whatsapp text-lg"></i>
-                <span>Cotizar Gratis</span>
-            </a>
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/573216697721?text=Hola%20Dseguro,%20deseo%20asesoría%20personalizada%20con%20una%20póliza." target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-emerald-600/20 transition flex items-center gap-2 text-sm">
+                    <i class="fab fa-whatsapp text-lg"></i>
+                    <span>Asesoría WhatsApp</span>
+                </a>
+            </div>
         </div>
     </header>
 
-    <!-- BANNER HERO PRINCIPAL CON REEL INTEGRADO -->
-    <section class="hero-bg text-white relative overflow-hidden pt-12 pb-20 lg:py-24 border-b border-brand-gold/20">
-        <!-- Glow decorativos de fondo -->
-        <div class="absolute -top-32 -left-32 w-96 h-96 bg-brand-light/30 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-brand-gold/10 rounded-full blur-3xl pointer-events-none"></div>
-
+    <!-- Hero Section con Reel Integrado -->
+    <section id="inicio" class="relative bg-gradient-to-br from-corporate-blue via-corporate-navy to-slate-900 text-white py-16 lg:py-24 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#D4AF37_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 
-                <!-- COLUMNA IZQUIERDA: PROPUESTA DE VALOR Y CONFIANZA -->
-                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-light/40 border border-brand-gold/40 text-brand-gold text-xs sm:text-sm font-semibold">
-                        <i class="fa-solid fa-badge-check text-base"></i> Especialistas en Protección Patrimonial y Familiar
+                <!-- Text Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-corporate-gold/10 border border-corporate-gold/30 text-corporate-gold text-xs font-bold uppercase tracking-wider">
+                        <i class="fas fa-award">></i> Protección Integral Garantizada
                     </div>
-
-                    <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-black leading-tight tracking-tight">
-                        Protegemos lo que <br class="hidden sm:inline">
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold via-yellow-200 to-amber-400">más te importa</span> en Colombia.
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+                        Protegemos lo que más amas con <span class="text-transparent bg-clip-text bg-gradient-to-r from-corporate-gold to-yellow-200">el mejor respaldo</span>.
                     </h1>
-
-                    <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
-                        En <strong>D'SEGURO LTDA</strong> te brindamos asesoría honesta, transparente y 100% personalizada. Cotizamos tu póliza con las <strong>aseguradoras líderes del país</strong> para garantizarte la mejor cobertura al mejor precio.
+                    
+                    <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl">
+                        Somos expertos en consultoría y gestión de seguros en Colombia. Te acompañamos a elegir la póliza ideal para tu vehículo, hogar, salud, empresa o patrimonio con las mejores aseguradoras del país.
                     </p>
 
-                    <!-- Puntos clave de confianza -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2 text-left text-sm">
-                        <div class="flex items-center gap-3 bg-white/5 p-2.5 rounded-xl border border-white/10">
-                            <i class="fa-solid fa-circle-check text-emerald-400 text-lg"></i>
-                            <span>Asesoría 100% Gratuita</span>
-                        </div>
-                        <div class="flex items-center gap-3 bg-white/5 p-2.5 rounded-xl border border-white/10">
-                            <i class="fa-solid fa-hands-holding-shield text-brand-gold text-lg"></i>
-                            <span>Acompañamiento en Siniestros</span>
-                        </div>
-                        <div class="flex items-center gap-3 bg-white/5 p-2.5 rounded-xl border border-white/10">
-                            <i class="fa-solid fa-file-contract text-emerald-400 text-lg"></i>
-                            <span>Las mejores tarifas del mercado</span>
-                        </div>
-                        <div class="flex items-center gap-3 bg-white/5 p-2.5 rounded-xl border border-white/10">
-                            <i class="fa-solid fa-user-shield text-brand-gold text-lg"></i>
-                            <span>Atención humana y directa</span>
-                        </div>
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+                        <a href="#cotizador" class="bg-corporate-gold hover:bg-yellow-500 text-corporate-blue font-bold px-8 py-4 rounded-xl shadow-xl transition text-center flex items-center justify-center gap-2 text-base">
+                            <i class="fas fa-calculator"></i> Cotizar mi Póliza Ahora
+                        </a>
+                        <a href="https://www.instagram.com/dseguro_ltda/" target="_blank" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold px-6 py-4 rounded-xl transition text-center flex items-center justify-center gap-2 text-base">
+                            <i class="fab fa-instagram text-corporate-gold"></i> Ver Instagram Oficial
+                        </a>
                     </div>
 
-                    <!-- Botones CTA Hero -->
-                    <div class="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <a href="https://wa.me/573216697721?text=Hola%20D'SEGURO%20LTDA,%20quiero%20cotizar%20un%20seguro%20personalizado." 
-                           target="_blank"
-                           class="pulse-gold bg-gradient-to-r from-brand-gold to-amber-500 hover:from-amber-500 hover:to-brand-gold text-brand-dark font-black text-base py-4 px-8 rounded-xl shadow-xl transition transform hover:-translate-y-0.5 flex items-center justify-center gap-3">
-                            <i class="fa-brands fa-whatsapp text-2xl text-brand-dark"></i>
-                            <span>HABLAR CON UN ASESOR</span>
-                        </a>
-                        <a href="#soluciones" 
-                           class="bg-white/10 hover:bg-white/20 text-white font-semibold text-base py-4 px-6 rounded-xl border border-white/20 transition flex items-center justify-center gap-2">
-                            <span>Ver Portafolio</span>
-                            <i class="fa-solid fa-arrow-down text-xs"></i>
-                        </a>
+                    <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-700/60">
+                        <div>
+                            <div class="text-2xl font-black text-corporate-gold">+15 Mil</div>
+                            <div class="text-xs text-slate-400">Pólizas gestionadas</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-black text-corporate-gold">100%</div>
+                            <div class="text-xs text-slate-400">Acompañamiento en siniestros</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-black text-corporate-gold">Top 10</div>
+                            <div class="text-xs text-slate-400">Alianzas con aseguradoras</div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- COLUMNA DERECHA: REEL DE INSTAGRAM EN BANNER PRINCIPAL -->
-                <div class="lg:col-span-5 flex flex-col items-center justify-center">
-                    <div class="relative w-full max-w-[360px] mx-auto group">
-                        
-                        <!-- Marco Decorativo Dorado -->
-                        <div class="absolute -inset-1.5 rounded-[2.5rem] bg-gradient-to-b from-brand-gold via-brand-light to-brand-primary opacity-80 blur-sm group-hover:opacity-100 transition duration-500"></div>
-
-                        <!-- Tarjeta que contiene el Reel -->
-                        <div class="relative bg-brand-dark rounded-[2.2rem] p-3 shadow-2xl border border-brand-gold/40">
-                            
-                            <!-- Header de la tarjeta del Reel -->
-                            <div class="flex items-center justify-between px-3 py-2 border-b border-white/10 mb-2">
-                                <div class="flex items-center gap-2">
-                                    <div class="w-7 h-7 rounded-full bg-gradient-to-tr from-brand-gold to-brand-light flex items-center justify-center font-bold text-xs text-brand-dark">
-                                        D
-                                    </div>
-                                    <span class="text-xs font-bold text-slate-200">@dseguro_ltda</span>
-                                </div>
-                                <span class="text-[10px] bg-red-600/90 text-white px-2 py-0.5 rounded-full uppercase font-bold tracking-wider animate-pulse flex items-center gap-1">
-                                    <i class="fa-solid fa-play text-[8px]"></i> Reel Oficial
-                                </span>
-                            </div>
-
-                            <!-- IFRAME DEL REEL DE INSTAGRAM -->
-                            <div class="w-full h-[470px] rounded-2xl overflow-hidden bg-black relative flex items-center justify-center border border-white/5">
-                                <iframe 
-                                    src="https://www.instagram.com/reel/DceH9NXCLly/embed/" 
-                                    class="w-full h-full border-0" 
-                                    frameborder="0" 
-                                    scrolling="no" 
-                                    allowtransparency="true"
-                                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-                                </iframe>
-                            </div>
-
-                            <!-- Footer del Reel con botón de acción rápida -->
-                            <div class="mt-3 pt-2 text-center">
-                                <a href="https://www.instagram.com/reel/DceH9NXCLly/" target="_blank" class="text-xs text-slate-400 hover:text-brand-gold transition flex items-center justify-center gap-1.5 font-medium">
-                                    <i class="fa-brands fa-instagram text-brand-gold"></i> Ver este Reel directamente en Instagram
-                                </a>
-                            </div>
-
+                <!-- Instagram Reel / Video Box Container -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="w-full max-w-xs bg-slate-900 rounded-3xl p-3 shadow-2xl border-4 border-slate-700 relative">
+                        <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-corporate-gold text-corporate-blue font-bold text-[10px] uppercase tracking-widest px-3 py-1 rounded-full shadow">
+                            Contenido Destacado
+                        </div>
+                        <div class="rounded-2xl overflow-hidden aspect-[9/16] bg-black relative flex items-center justify-center">
+                            <!-- Instagram Embed del Reel especificado -->
+                            <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DceH9NXCLly/?utm_source=ig_web_copy_link&amp;stkn=MzRlODBiNWFlZA==" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"></blockquote>
+                            <script async src="//www.instagram.com/embed.js"></script>
                         </div>
                     </div>
                 </div>
@@ -231,159 +131,130 @@
         </div>
     </section>
 
-    <!-- BARRA DE ASEGURADORAS ALIADAS (Respaldadas por la imagen) -->
-    <section id="aliados" class="py-10 bg-white border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p class="text-center text-xs sm:text-sm font-bold tracking-widest text-slate-500 uppercase mb-8">
-                Respaldados por las Aseguradoras más sólidas y confiables de Colombia
-            </p>
-            
-            <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-9 gap-4 items-center justify-center text-center">
-                <!-- Aliados mostrados en su perfil de Instagram -->
-                <div class="p-3 bg-slate-50 rounded-xl hover:shadow-md transition border border-slate-100 flex flex-col items-center justify-center">
-                    <span class="font-extrabold text-blue-900 text-sm">SURA</span>
-                    <span class="text-[10px] text-slate-500">#888</span>
-                </div>
-                <div class="p-3 bg-slate-50 rounded-xl hover:shadow-md transition border border-slate-100 flex flex-col items-center justify-center">
-                    <span class="font-extrabold text-red-600 text-sm">MAPFRE</span>
-                    <span class="text-[10px] text-slate-500">#624</span>
-                </div>
-                <div class="p-3 bg-slate-50 rounded-xl hover:shadow-md transition border border-slate-100 flex flex-col items-center justify-center">
-                    <span class="font-extrabold text-yellow-600 text-sm">BOLÍVAR</span>
-                    <span class="text-[10px] text-slate-500">#322</span>
-                </div>
-                <div class="p-3 bg-slate-50 rounded-xl hover:shadow-md transition border border-slate-100 flex flex-col items-center justify-center">
-                    <span class="font-extrabold text-blue-800 text-sm">AXA COLPATRIA</span>
-                    <span class="text-[10px] text-slate-500">#247</span>
-                </div>
-                <div class="p-3 bg-slate-50 rounded-xl hover:shadow-md transition border border-slate-100 flex flex-col items-center justify-center">
-                    <span class="font-extrabold text-emerald-800 text-sm">HDI SEGUROS</span>
-                    <span class="text-[10px] text-slate-500">#224</span>
-                </div>
-                <div class="p-3 bg-slate-50 rounded-xl hover:shadow-md transition border border-slate-100 flex flex-col items-center justify-center">
-                    <span class="font-extrabold text-purple-900 text-sm">SBS</span>
-                    <span class="text-[10px] text-slate-500">#360</span>
-                </div>
-                <div class="p-3 bg-slate-50 rounded-xl hover:shadow-md transition border border-slate-100 flex flex-col items-center justify-center">
-                    <span class="font-extrabold text-blue-600 text-sm">SOLIDARIA</span>
-                    <span class="text-[10px] text-slate-500">#789</span>
-                </div>
-                <div class="p-3 bg-slate-50 rounded-xl hover:shadow-md transition border border-slate-100 flex flex-col items-center justify-center">
-                    <span class="font-extrabold text-teal-700 text-sm">MUNDIAL</span>
-                    <span class="text-[10px] text-slate-500">#388</span>
-                </div>
-                <div class="p-3 bg-slate-50 rounded-xl hover:shadow-md transition border border-slate-100 flex flex-col items-center justify-center">
-                    <span class="font-extrabold text-green-700 text-sm">EQUIDAD</span>
-                    <span class="text-[10px] text-slate-500">#324</span>
-                </div>
+    <!-- Directorio de Aseguradoras Aliadas (Colombia) -->
+    <section id="aliados" class="py-12 bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-8">
+                Trabajamos de la mano con las principales aseguradoras y respaldos de Colombia
+            </h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-9 gap-6 items-center justify-center opacity-80">
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 font-bold text-slate-700 text-sm">SURA <span class="text-xs block text-slate-400 font-normal">#888</span></div>
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 font-bold text-slate-700 text-sm">Seguros Bolívar <span class="text-xs block text-slate-400 font-normal">#322</span></div>
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 font-bold text-slate-700 text-sm">Mapfre <span class="text-xs block text-slate-400 font-normal">#624</span></div>
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 font-bold text-slate-700 text-sm">AXA Colpatria <span class="text-xs block text-slate-400 font-normal">#247</span></div>
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 font-bold text-slate-700 text-sm">HDI Seguros <span class="text-xs block text-slate-400 font-normal">#224</span></div>
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 font-bold text-slate-700 text-sm">SBS Seguros <span class="text-xs block text-slate-400 font-normal">#360</span></div>
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 font-bold text-slate-700 text-sm">Solidaria <span class="text-xs block text-slate-400 font-normal">#789</span></div>
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 font-bold text-slate-700 text-sm">Seguros Mundial</div>
+                <div class="p-3 bg-slate-50 rounded-xl border border-slate-200 font-bold text-slate-700 text-sm">La Equidad <span class="text-xs block text-slate-400 font-normal">#324</span></div>
             </div>
         </div>
     </section>
 
-    <!-- PORTAFOLIO DE SOLUCIONES (Basado en la bio de la cuenta) -->
-    <section id="soluciones" class="py-20 bg-slate-50">
+    <!-- Catálogo / Servicios de Pólizas -->
+    <section id="servicios" class="py-20 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-brand-gold font-bold text-xs sm:text-sm uppercase tracking-wider block mb-2">Nuestro Portafolio</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-dark">Seguros diseñados para tu tranquilidad</h2>
-                <p class="text-slate-600 mt-3 text-base">Encuentra la protección exacta que necesitas para ti, tu familia o tu empresa.</p>
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-corporate-navy font-bold text-sm tracking-widest uppercase bg-corporate-light px-3 py-1 rounded-full">Portafolio de Soluciones</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-corporate-blue">¿Qué deseas proteger hoy?</h2>
+                <p class="text-slate-600">Diseñamos planes a la medida para personas, familias y empresas con cobertura nacional.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- 1. Vehículos -->
-                <div class="bg-white rounded-2xl p-7 shadow-lg shadow-slate-200/60 border border-slate-100 hover:border-brand-gold/60 transition duration-300 flex flex-col justify-between group">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition border border-slate-200/80 flex flex-col justify-between group">
                     <div>
-                        <div class="w-14 h-14 rounded-xl bg-blue-50 text-brand-primary flex items-center justify-center text-2xl mb-5 group-hover:bg-brand-primary group-hover:text-white transition duration-300">
-                            <i class="fa-solid fa-car-side"></i>
+                        <div class="w-14 h-14 rounded-xl bg-corporate-light text-corporate-navy flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-corporate-blue group-hover:text-white transition">
+                            <i class="fas fa-car"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-brand-dark mb-2">Seguro de Autos & Todo Riesgo</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            Protección total contra choques, pérdida total, hurto, asistencia en carretera 24/7 y responsabilidad civil extracontractual.
+                        <h3 class="text-xl font-bold text-corporate-blue mb-3">Seguro para Vehículos (Autos)</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Protección total contra todo riesgo, responsabilidad civil extracontractual, asistencia en carretera 24/7, vehículo de reemplazo y protección jurídica.
                         </p>
                     </div>
-                    <a href="https://wa.me/573216697721?text=Hola,%20deseo%20cotizar%20un%20Seguro%20de%20Veh%C3%ADculo." target="_blank" class="text-brand-primary group-hover:text-brand-gold font-bold text-sm flex items-center gap-2 mt-2">
-                        Cotizar Vehículo <i class="fa-solid fa-arrow-right text-xs"></i>
+                    <a href="https://wa.me/573216697721?text=Hola%20Dseguro,%20quiero%20cotizar%20el%20seguro%20para%20mi%20vehículo." target="_blank" class="w-full bg-slate-100 hover:bg-corporate-navy hover:text-white text-corporate-blue font-semibold py-3 rounded-xl transition text-center text-sm flex items-center justify-center gap-2">
+                        <span>Cotizar Vehículo</span> <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
 
-                <!-- 2. Salud & Medicina Prepagada -->
-                <div class="bg-white rounded-2xl p-7 shadow-lg shadow-slate-200/60 border border-slate-100 hover:border-brand-gold/60 transition duration-300 flex flex-col justify-between group">
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition border border-slate-200/80 flex flex-col justify-between group">
                     <div>
-                        <div class="w-14 h-14 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl mb-5 group-hover:bg-emerald-600 group-hover:text-white transition duration-300">
-                            <i class="fa-solid fa-heart-pulse"></i>
+                        <div class="w-14 h-14 rounded-xl bg-corporate-light text-corporate-navy flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-corporate-blue group-hover:text-white transition">
+                            <i class="fas fa-home"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-brand-dark mb-2">Seguros de Salud & Prepagada</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            Acceso a las mejores clínicas de Colombia, especialistas directos sin filas, atención de urgencias y cobertura internacional.
+                        <h3 class="text-xl font-bold text-corporate-blue mb-3">Seguro de Hogar</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Resguarda tu patrimonio ante incendios, terremotos, hurtos, daños por agua y asistencia domiciliaria integral para reparaciones locativas.
                         </p>
                     </div>
-                    <a href="https://wa.me/573216697721?text=Hola,%20deseo%20cotizar%20un%20Seguro%20de%20Salud." target="_blank" class="text-brand-primary group-hover:text-brand-gold font-bold text-sm flex items-center gap-2 mt-2">
-                        Cotizar Salud <i class="fa-solid fa-arrow-right text-xs"></i>
+                    <a href="https://wa.me/573216697721?text=Hola%20Dseguro,%20quiero%20cotizar%20el%20seguro%20para%20mi%20hogar." target="_blank" class="w-full bg-slate-100 hover:bg-corporate-navy hover:text-white text-corporate-blue font-semibold py-3 rounded-xl transition text-center text-sm flex items-center justify-center gap-2">
+                        <span>Cotizar Hogar</span> <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
 
-                <!-- 3. Vida & Familia -->
-                <div class="bg-white rounded-2xl p-7 shadow-lg shadow-slate-200/60 border border-slate-100 hover:border-brand-gold/60 transition duration-300 flex flex-col justify-between group">
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition border border-slate-200/80 flex flex-col justify-between group">
                     <div>
-                        <div class="w-14 h-14 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-2xl mb-5 group-hover:bg-amber-600 group-hover:text-white transition duration-300">
-                            <i class="fa-solid fa-people-roof"></i>
+                        <div class="w-14 h-14 rounded-xl bg-corporate-light text-corporate-navy flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-corporate-blue group-hover:text-white transition">
+                            <i class="fas fa-heartbeat"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-brand-dark mb-2">Seguro de Vida & Familia</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            Garantiza el futuro financiero y la educación de tus hijos ante cualquier eventualidad o incapacidad.
+                        <h3 class="text-xl font-bold text-corporate-blue mb-3">Pólizas de Salud y Vida</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Medicina prepagada, pólizas de salud con acceso a las mejores clínicas del país y seguros de vida con respaldo financiero para tu familia.
                         </p>
                     </div>
-                    <a href="https://wa.me/573216697721?text=Hola,%20deseo%20cotizar%20un%20Seguro%20de%20Vida." target="_blank" class="text-brand-primary group-hover:text-brand-gold font-bold text-sm flex items-center gap-2 mt-2">
-                        Cotizar Vida <i class="fa-solid fa-arrow-right text-xs"></i>
+                    <a href="https://wa.me/573216697721?text=Hola%20Dseguro,%20quiero%20cotizar%20Salud%20y%20Vida." target="_blank" class="w-full bg-slate-100 hover:bg-corporate-navy hover:text-white text-corporate-blue font-semibold py-3 rounded-xl transition text-center text-sm flex items-center justify-center gap-2">
+                        <span>Cotizar Salud y Vida</span> <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
 
-                <!-- 4. Hogar -->
-                <div class="bg-white rounded-2xl p-7 shadow-lg shadow-slate-200/60 border border-slate-100 hover:border-brand-gold/60 transition duration-300 flex flex-col justify-between group">
+                <!-- Card 4 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition border border-slate-200/80 flex flex-col justify-between group">
                     <div>
-                        <div class="w-14 h-14 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-2xl mb-5 group-hover:bg-indigo-600 group-hover:text-white transition duration-300">
-                            <i class="fa-solid fa-house-chimney-window"></i>
+                        <div class="w-14 h-14 rounded-xl bg-corporate-light text-corporate-navy flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-corporate-blue group-hover:text-white transition">
+                            <i class="fas fa-briefcase"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-brand-dark mb-2">Seguro de Hogar</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            Respaldo integral para tu vivienda y pertenencias contra terremoto, incendio, inundaciones, hurto y daños a terceros.
+                        <h3 class="text-xl font-bold text-corporate-blue mb-3">Seguros para Empresas</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Pólizas de responsabilidad civil empresarial, cumplimiento, copropiedades, transporte de mercancías y riesgos laborales.
                         </p>
                     </div>
-                    <a href="https://wa.me/573216697721?text=Hola,%20deseo%20cotizar%20un%20Seguro%20de%20Hogar." target="_blank" class="text-brand-primary group-hover:text-brand-gold font-bold text-sm flex items-center gap-2 mt-2">
-                        Cotizar Hogar <i class="fa-solid fa-arrow-right text-xs"></i>
+                    <a href="https://wa.me/573216697721?text=Hola%20Dseguro,%20quiero%20asesoría%20en%20seguros%20empresariales." target="_blank" class="w-full bg-slate-100 hover:bg-corporate-navy hover:text-white text-corporate-blue font-semibold py-3 rounded-xl transition text-center text-sm flex items-center justify-center gap-2">
+                        <span>Cotizar Empresa</span> <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
 
-                <!-- 5. PYMES & Empresas -->
-                <div class="bg-white rounded-2xl p-7 shadow-lg shadow-slate-200/60 border border-slate-100 hover:border-brand-gold/60 transition duration-300 flex flex-col justify-between group">
+                <!-- Card 5 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition border border-slate-200/80 flex flex-col justify-between group">
                     <div>
-                        <div class="w-14 h-14 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-2xl mb-5 group-hover:bg-purple-600 group-hover:text-white transition duration-300">
-                            <i class="fa-solid fa-briefcase"></i>
+                        <div class="w-14 h-14 rounded-xl bg-corporate-light text-corporate-navy flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-corporate-blue group-hover:text-white transition">
+                            <i class="fas fa-file-contract"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-brand-dark mb-2">Seguros para PYMES</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            Protección patrimonial para tu negocio, maquinarias, inventarios, responsabilidad patronal y pérdidas operativas.
+                        <h3 class="text-xl font-bold text-corporate-blue mb-3">Seguro de Arrendamiento</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Garantiza el pago oportuno del canon de administración y arrendamiento, protegiendo a los propietarios de inmuebles de forma segura.
                         </p>
                     </div>
-                    <a href="https://wa.me/573216697721?text=Hola,%20deseo%20cotizar%20un%20Seguro%20para%20PYMES." target="_blank" class="text-brand-primary group-hover:text-brand-gold font-bold text-sm flex items-center gap-2 mt-2">
-                        Cotizar PYME <i class="fa-solid fa-arrow-right text-xs"></i>
+                    <a href="https://wa.me/573216697721?text=Hola%20Dseguro,%20deseo%20información%20sobre%20seguro%20de%20arrendamiento." target="_blank" class="w-full bg-slate-100 hover:bg-corporate-navy hover:text-white text-corporate-blue font-semibold py-3 rounded-xl transition text-center text-sm flex items-center justify-center gap-2">
+                        <span>Cotizar Arrendamiento</span> <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
 
-                <!-- 6. Pólizas de Cumplimiento -->
-                <div class="bg-white rounded-2xl p-7 shadow-lg shadow-slate-200/60 border border-slate-100 hover:border-brand-gold/60 transition duration-300 flex flex-col justify-between group">
+                <!-- Card 6 -->
+                <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition border border-slate-200/80 flex flex-col justify-between group">
                     <div>
-                        <div class="w-14 h-14 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-2xl mb-5 group-hover:bg-teal-600 group-hover:text-white transition duration-300">
-                            <i class="fa-solid fa-file-signature"></i>
+                        <div class="w-14 h-14 rounded-xl bg-corporate-light text-corporate-navy flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-corporate-blue group-hover:text-white transition">
+                            <i class="fas fa-plane"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-brand-dark mb-2">Pólizas de Cumplimiento</h3>
-                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                            Garantías para contratación estatal y privada, seriedad de la oferta, buen manejo de anticipo y calidad de servicio.
+                        <h3 class="text-xl font-bold text-corporate-blue mb-3">Asistencia en Viajes</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6">
+                            Tarjeta de asistencia médica internacional para que viajes con tranquilidad ante cualquier imprevisto médico o pérdida de equipaje.
                         </p>
                     </div>
-                    <a href="https://wa.me/573216697721?text=Hola,%20deseo%20cotizar%20P%C3%B3liza%20de%20Cumplimiento." target="_blank" class="text-brand-primary group-hover:text-brand-gold font-bold text-sm flex items-center gap-2 mt-2">
-                        Cotizar Cumplimiento <i class="fa-solid fa-arrow-right text-xs"></i>
+                    <a href="https://wa.me/573216697721?text=Hola%20Dseguro,%20necesito%20asistencia%20de%20viajes." target="_blank" class="w-full bg-slate-100 hover:bg-corporate-navy hover:text-white text-corporate-blue font-semibold py-3 rounded-xl transition text-center text-sm flex items-center justify-center gap-2">
+                        <span>Cotizar Viaje</span> <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
 
@@ -391,171 +262,196 @@
         </div>
     </section>
 
-    <!-- FORMULARIO / COTIZADOR RÁPIDO INTERACTIVO POR WHATSAPP -->
-    <section class="py-16 bg-gradient-to-br from-brand-blue via-brand-primary to-brand-dark text-white relative">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6">
-            <div class="bg-white/10 backdrop-blur-md p-8 sm:p-12 rounded-3xl border border-white/20 shadow-2xl">
-                <div class="text-center mb-8">
-                    <span class="text-brand-gold text-xs uppercase font-bold tracking-widest block mb-2">Respuesta en menos de 15 minutos</span>
-                    <h2 class="text-2xl sm:text-3xl font-extrabold">Cotiza tu Seguro al Mejor Precio</h2>
-                    <p class="text-slate-300 text-sm mt-2">Selecciona qué deseas proteger y te enviaremos una comparativa sin compromiso.</p>
+    <!-- Cotizador / Simulador Interactivo -->
+    <section id="cotizador" class="py-20 bg-corporate-blue text-white relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="bg-white text-slate-800 rounded-3xl p-8 sm:p-12 shadow-2xl border border-slate-200">
+                <div class="text-center max-w-xl mx-auto mb-8 space-y-2">
+                    <span class="text-corporate-gold font-bold text-xs uppercase tracking-widest bg-corporate-blue/5 px-3 py-1 rounded-full">Simulador Express</span>
+                    <h2 class="text-3xl font-black text-corporate-blue">Solicita tu Cotización Inmediata</h2>
+                    <p class="text-slate-600 text-sm">Completa los datos y un asesor experto te contactará por WhatsApp en menos de 5 minutos.</p>
                 </div>
 
-                <form id="quoteForm" class="space-y-4 max-w-xl mx-auto" onsubmit="handleQuote(event)">
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <form id="quoteForm" onsubmit="sendToWhatsApp(event)" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div>
-                            <label class="block text-xs font-semibold text-slate-300 mb-1">Tu Nombre</label>
-                            <input type="text" id="name" required placeholder="Ej: Carlos Gómez" 
-                                   class="w-full px-4 py-3 rounded-xl bg-white/90 text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-gold text-sm font-medium">
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Nombre Completo</label>
+                            <input type="text" id="userName" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-corporate-navy focus:outline-none text-sm" placeholder="Ej. Carlos Mendoza">
                         </div>
                         <div>
-                            <label class="block text-xs font-semibold text-slate-300 mb-1">Tipo de Seguro</label>
-                            <select id="insuranceType" class="w-full px-4 py-3 rounded-xl bg-white/90 text-slate-900 focus:outline-none focus:ring-2 focus:ring-brand-gold text-sm font-medium">
-                                <option value="Vehículo / Todo Riesgo">Vehículo / Todo Riesgo</option>
-                                <option value="Salud y Medicina Prepagada">Salud / Prepagada</option>
-                                <option value="Vida y Familia">Seguro de Vida</option>
-                                <option value="Hogar y Patrimonio">Seguro de Hogar</option>
-                                <option value="PYMES / Empresa">Seguros para PYMES</option>
-                                <option value="Póliza de Cumplimiento">Cumplimiento</option>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Número de WhatsApp</label>
+                            <input type="tel" id="userPhone" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-corporate-navy focus:outline-none text-sm" placeholder="Ej. 3216697721">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Tipo de Seguro de Interés</label>
+                            <select id="insuranceType" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-corporate-navy focus:outline-none text-sm bg-white">
+                                <option value="Seguro de Vehículo / Auto">Seguro de Vehículo / Auto</option>
+                                <option value="Seguro de Hogar">Seguro de Hogar</option>
+                                <option value="Salud y Vida">Salud y Vida</option>
+                                <option value="Seguro para Empresas">Seguro para Empresas</option>
+                                <option value="Seguro de Arrendamiento">Seguro de Arrendamiento</option>
+                                <option value="Asistencia en Viajes">Asistencia en Viajes</option>
                             </select>
                         </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Ciudad o Ubicación</label>
+                            <input type="text" id="userCity" required class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-corporate-navy focus:outline-none text-sm" placeholder="Ej. Bogotá, Medellín, Cali...">
+                        </div>
                     </div>
+
                     <div>
-                        <label class="block text-xs font-semibold text-slate-300 mb-1">Ciudad de Radicación</label>
-                        <input type="text" id="city" required placeholder="Ej: Bogotá, Cali, Medellín, etc." 
-                               class="w-full px-4 py-3 rounded-xl bg-white/90 text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-brand-gold text-sm font-medium">
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">Detalles adicionales (Opcional)</label>
+                        <textarea id="userNotes" rows="3" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-corporate-navy focus:outline-none text-sm" placeholder="Ej. Modelo del carro, año, número de personas a asegurar..."></textarea>
                     </div>
-                    
-                    <button type="submit" class="w-full py-4 px-6 bg-gradient-to-r from-brand-gold to-amber-500 hover:from-amber-500 hover:to-brand-gold text-brand-dark font-extrabold rounded-xl shadow-xl transition transform hover:-translate-y-0.5 flex items-center justify-center gap-3 text-base">
-                        <i class="fa-brands fa-whatsapp text-2xl"></i>
-                        <span>SOLICITAR COTIZACIÓN POR WHATSAPP</span>
+
+                    <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 rounded-xl shadow-xl transition flex items-center justify-center gap-3 text-base">
+                        <i class="fab fa-whatsapp text-2xl"></i>
+                        <span>Enviar Solicitud por WhatsApp</span>
                     </button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- SECCIÓN: LÍNEAS DE ATENCIÓN DIRECTA (Destacadas de su Instagram) -->
-    <section id="lineas" class="py-16 bg-white">
+    <!-- Testimonios de Clientes Satisfechos -->
+    <section id="testimonios" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="text-brand-primary font-bold text-xs sm:text-sm uppercase tracking-wider block mb-2">Asistencia Rápida en Siniestros</span>
-                <h2 class="text-2xl sm:text-3xl font-black text-brand-dark">Líneas de Atención Directa</h2>
-                <p class="text-slate-600 text-sm mt-2">¿Tienes una emergencia? Comunícate directamente desde tu celular con la línea gratuita de tu aseguradora:</p>
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <span class="text-corporate-navy font-bold text-sm tracking-widest uppercase bg-corporate-light px-3 py-1 rounded-full">Experiencias Reales</span>
+                <h2 class="text-3xl font-black text-corporate-blue">Lo que dicen nuestros asegurados</h2>
             </div>
 
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
-                <div class="p-4 rounded-xl border border-slate-200 text-center bg-slate-50">
-                    <p class="text-xs text-slate-500 font-semibold">Seguros Sura</p>
-                    <p class="text-xl font-black text-brand-dark mt-1">#888</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 relative flex flex-col justify-between">
+                    <div class="text-corporate-gold mb-4 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">
+                        "Excelente asesoría. Me ayudaron a encontrar el seguro para mi carro con una cobertura completa y un precio mucho mejor que el que pagaba antes. Súper recomendados."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-corporate-blue text-white font-bold flex items-center justify-center text-sm">AM</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-corporate-blue">Alejandro Morales</h4>
+                            <span class="text-xs text-slate-500">Cliente Póliza Autos</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="p-4 rounded-xl border border-slate-200 text-center bg-slate-50">
-                    <p class="text-xs text-slate-500 font-semibold">Seguros Bolívar</p>
-                    <p class="text-xl font-black text-brand-dark mt-1">#322</p>
+
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 relative flex flex-col justify-between">
+                    <div class="text-corporate-gold mb-4 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">
+                        "La atención ante un siniestro menor con mi hogar fue impecable. Dseguro Ltda estuvo pendiente todo el tiempo hasta que la aseguradora respondió. Confianza total."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-corporate-navy text-white font-bold flex items-center justify-center text-sm">CR</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-corporate-blue">Carolina Ramírez</h4>
+                            <span class="text-xs text-slate-500">Cliente Seguro Hogar</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="p-4 rounded-xl border border-slate-200 text-center bg-slate-50">
-                    <p class="text-xs text-slate-500 font-semibold">MAPFRE Seguros</p>
-                    <p class="text-xl font-black text-brand-dark mt-1">#624</p>
-                </div>
-                <div class="p-4 rounded-xl border border-slate-200 text-center bg-slate-50">
-                    <p class="text-xs text-slate-500 font-semibold">AXA Colpatria</p>
-                    <p class="text-xl font-black text-brand-dark mt-1">#247</p>
-                </div>
-                <div class="p-4 rounded-xl border border-slate-200 text-center bg-slate-50">
-                    <p class="text-xs text-slate-500 font-semibold">HDI Seguros</p>
-                    <p class="text-xl font-black text-brand-dark mt-1">#224</p>
-                </div>
-                <div class="p-4 rounded-xl border border-slate-200 text-center bg-slate-50">
-                    <p class="text-xs text-slate-500 font-semibold">SBS Seguros</p>
-                    <p class="text-xl font-black text-brand-dark mt-1">#360</p>
-                </div>
-                <div class="p-4 rounded-xl border border-slate-200 text-center bg-slate-50">
-                    <p class="text-xs text-slate-500 font-semibold">Aseguradora Solidaria</p>
-                    <p class="text-xl font-black text-brand-dark mt-1">#789</p>
-                </div>
-                <div class="p-4 rounded-xl border border-slate-200 text-center bg-slate-50">
-                    <p class="text-xs text-slate-500 font-semibold">La Equidad Seguros</p>
-                    <p class="text-xl font-black text-brand-dark mt-1">#324</p>
+
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 relative flex flex-col justify-between">
+                    <div class="text-corporate-gold mb-4 text-sm">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">
+                        "Manejan todas las pólizas de nuestra empresa. Su equipo de profesionales demuestra un conocimiento profundo del mercado asegurador en Colombia."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-corporate-gold text-corporate-blue font-bold flex items-center justify-center text-sm">FG</div>
+                        <div>
+                            <h4 class="font-bold text-sm text-corporate-blue">Felipe González</h4>
+                            <span class="text-xs text-slate-500">Gerente Pymes</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="bg-brand-dark text-slate-400 py-12 border-t border-brand-light/20 text-sm">
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-16 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                
-                <!-- Columna 1 -->
-                <div class="md:col-span-2 space-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+                <div class="space-y-4 md:col-span-1">
                     <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-xl bg-brand-gold flex items-center justify-center font-black text-brand-dark text-xl">
-                            D
-                        </div>
-                        <span class="text-2xl font-black text-white">D'SEGURO <span class="text-brand-gold text-sm font-semibold">LTDA</span></span>
+                        <img src="LOGO DSEGURO.jpg" alt="Dseguro Ltda Logo" class="h-10 w-auto object-contain rounded-lg">
+                        <span class="text-xl font-black tracking-tight text-white">DSEGURO<span class="text-corporate-gold">.</span></span>
                     </div>
-                    <p class="text-slate-400 text-sm max-w-md">
-                        👥 Protegemos lo que más te importa. Asesoría especializada en pólizas de salud, vida, vehículos, hogar, pymes y cumplimiento en toda Colombia.
+                    <p class="text-xs leading-relaxed text-slate-400">
+                        Expertos asesores en intermediación y gestión de seguros para proteger el bienestar familiar y la estabilidad empresarial en Colombia.
                     </p>
+                    <div class="flex items-center gap-3 pt-2">
+                        <a href="https://www.instagram.com/dseguro_ltda/" target="_blank" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-corporate-gold hover:text-corporate-blue flex items-center justify-center text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/573216697721" target="_blank" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-emerald-600 flex items-center justify-center text-white transition"><i class="fab fa-whatsapp"></i></a>
+                    </div>
                 </div>
 
-                <!-- Columna 2 -->
                 <div>
-                    <h4 class="text-white font-bold mb-3">Contacto Directo</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li>
-                            <a href="https://wa.me/573216697721" target="_blank" class="hover:text-brand-gold transition flex items-center gap-2">
-                                <i class="fa-brands fa-whatsapp text-emerald-400"></i> +57 (321) 669-7721
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/dseguro_ltda/" target="_blank" class="hover:text-brand-gold transition flex items-center gap-2">
-                                <i class="fa-brands fa-instagram text-pink-400"></i> @dseguro_ltda
-                            </a>
-                        </li>
-                        <li class="flex items-center gap-2 text-slate-400">
-                            <i class="fa-solid fa-location-dot text-brand-gold"></i> Colombia
-                        </li>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Pólizas Principales</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#servicios" class="hover:text-corporate-gold transition">Seguro de Automóviles</a></li>
+                        <li><a href="#servicios" class="hover:text-corporate-gold transition">Seguro de Hogar</a></li>
+                        <li><a href="#servicios" class="hover:text-corporate-gold transition">Pólizas de Salud y Vida</a></li>
+                        <li><a href="#servicios" class="hover:text-corporate-gold transition">Seguros Empresariales</a></li>
                     </ul>
                 </div>
 
-                <!-- Columna 3 -->
                 <div>
-                    <h4 class="text-white font-bold mb-3">Seguridad y Confianza</h4>
-                    <p class="text-xs text-slate-400 leading-relaxed">
-                        Toda la información suministrada es tratada bajo estricta confidencialidad y conforme a la Ley de Protección de Datos Personales (Habeas Data).
-                    </p>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Enlaces Útiles</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#inicio" class="hover:text-corporate-gold transition">Inicio</a></li>
+                        <li><a href="#aliados" class="hover:text-corporate-gold transition">Aseguradoras Aliadas</a></li>
+                        <li><a href="#cotizador" class="hover:text-corporate-gold transition">Cotizador Online</a></li>
+                        <li><a href="#testimonios" class="hover:text-corporate-gold transition">Testimonios</a></li>
+                    </ul>
                 </div>
 
+                <div>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Contacto Directo</h4>
+                    <ul class="space-y-3 text-xs">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-phone-alt text-corporate-gold mt-0.5"></i>
+                            <span>+57 321 669 7721</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fab fa-instagram text-corporate-gold mt-0.5"></i>
+                            <a href="https://www.instagram.com/dseguro_ltda/" target="_blank" class="hover:underline">@dseguro_ltda</a>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-map-marker-alt text-corporate-gold mt-0.5"></i>
+                            <span>Colombia</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
-                <p>© 2024-2026 D'SEGURO LTDA. Todos los derechos reservados.</p>
-                <p class="text-slate-500">Diseñado para generar máxima conversión y confianza.</p>
+            <div class="pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
+                <p>&copy; 2026 Dseguro Ltda. Todos los derechos reservados. Desarrollado con los más altos estándares de confianza y seguridad.</p>
             </div>
         </div>
     </footer>
 
-    <!-- BOTÓN FLOTANTE PERMANENTE DE WHATSAPP -->
-    <a href="https://wa.me/573216697721?text=Hola%20D'SEGURO%20LTDA,%20necesito%20asesor%C3%ADa%20inmediata." 
-       target="_blank" 
-       class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 sm:w-16 sm:h-16 rounded-full shadow-2xl flex items-center justify-center text-3xl transition duration-300 transform hover:scale-110 pulse-gold"
-       aria-label="Hablar por WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
-
-    <!-- SCRIPT PARA MANEJO DE COTIZACIÓN DIRECTA A WHATSAPP -->
+    <!-- Script para enviar datos al WhatsApp -->
     <script>
-        function handleQuote(event) {
-            event.preventDefault();
-            const name = document.getElementById('name').value;
+        function sendToWhatsApp(e) {
+            e.preventDefault();
+            const name = document.getElementById('userName').value.trim();
+            const phone = document.getElementById('userPhone').value.trim();
             const type = document.getElementById('insuranceType').value;
-            const city = document.getElementById('city').value;
-            
-            const message = `¡Hola D'SEGURO LTDA! Mi nombre es *${name}*, me encuentro en la ciudad de *${city}* y estoy interesado(a) en cotizar un *${type}*. ¿Podrían brindarme asesoría?`;
-            const encodedMessage = encodeURIComponent(message);
-            
-            window.open(`https://wa.me/573216697721?text=${encodedMessage}`, '_blank');
+            const city = document.getElementById('userCity').value.trim();
+            const notes = document.getElementById('userNotes').value.trim();
+
+            const message = `Hola Dseguro, mi nombre es *${name}* (${phone}). Deseo una cotización para *${type}* en la ciudad de *${city}*.\n\nDetalles adicionales: ${notes || 'Ninguno'}`;
+            const encoded = encodeURIComponent(message);
+            window.open(`https://wa.me/573216697721?text=${encoded}`, '_blank');
         }
     </script>
 </body>
